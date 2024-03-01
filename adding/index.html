@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <a class="float_add" onclick="adding_section()"><i class="fa-solid fa-plus"></i></a>
+    <div class="link">
+        <p>Google雲端資料夾連結</p>
+        <input type="text">
+        <p>Google表單連結</p>
+        <input type="text">
+    </div>
+    <section class="sect first" id="first">
+        <h2>初次使用<a onclick="toggle_vis(this)"><span class="invisible">隱藏</span></a></h2>
+        <div>
+            <div>
+                <p>LOGO</p>
+                <div class="upload_method_div">
+                    <button onclick="input_method(this)" class="upload_method_btn" style="background-color: bisque;">Google連結</button>
+                    <button onclick="input_method(this)" class="upload_method_btn">上傳本機檔案</button>
+                </div>
+                <input type="url" onchange="readurl(this)">
+                <img>
+            </div>
+            <div>
+                <p>頭像</p>
+                <div class="upload_method_div">
+                    <button onclick="input_method(this)" class="upload_method_btn" style="background-color: bisque;">Google連結</button>
+                    <button onclick="input_method(this)" class="upload_method_btn">上傳本機檔案</button>
+                </div>
+                <input type="url" onchange="readurl(this)">
+                <img>
+            </div>
+            <div>
+                <p>名字</p>
+                <input class="txt" type="text" placeholder="請填入您的名字或暱稱">
+            </div>
+            <div>
+                <p>自我介紹</p>
+                <textarea></textarea>
+            </div>
+
+            <input class="submit first_sect_send" type="submit" onclick="first_section_send(this)">
+        </div>
+        
+    </section>
+
+    <section class="sect adder" id="second">
+        <h2>添加</h2>
+        <div class="adder_div">
+            <div>
+                <p>圖片</p>
+                <div class="upload_method_div">
+                    <button onclick="input_method(this)" class="upload_method_btn" style="background-color: bisque;">Google連結</button>
+                    <button onclick="input_method(this)" class="upload_method_btn">上傳本機檔案</button>
+                </div>
+                <input type="url" onchange="readurl(this)">
+                <img>
+            </div>
+            <div>
+                <p>名稱</p>
+                <input class="txt" type="text" placeholder="請輸入您的圖片名稱">
+            </div>
+            <div class="r18">
+                <input type="checkbox" id="R18" name="R18" />
+                <label for="R18">R18</label>
+            </div>
+        </div>
+    </section>
+
+    <input class="submit second_sect_send" type="submit" onclick="second_section_send()">
+
+    <script src="./methods.js"></script>
+</body>
+</html>

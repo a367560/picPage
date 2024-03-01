@@ -1,0 +1,109 @@
+.txt {
+    border: none;
+    border-bottom: 1px black solid;
+    padding: 1em;
+}
+
+.float_add {
+    display: flex;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    background-color: bisque;
+    padding: 1em;
+    border-radius: 5em;
+    cursor: pointer;
+}
+.float_add i{
+    font-size: 2em;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.invisible {
+    font-size: medium;
+    font-weight: normal;
+    color: blue;
+    margin-left: 1em;
+}
+
+.sect {
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+    width: 60%;
+}
+.sect div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sect div div img {
+    display: flex;
+    margin: 0 auto;
+    width: 5em;
+}
+
+.first {
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    padding-bottom: 2em;
+}
+
+.sect .r18 {
+    margin-top: 1em;
+    flex-direction: row;
+}
+
+.sect div .upload_method_div {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: baseline;
+    margin: 1em 0;
+}
+
+.upload_method_btn {
+    width: 50%;
+    padding: 1em;
+    border: 0;
+    background-color:rgba(0, 0, 0, 0);
+    border-radius: 1em;
+    cursor: pointer;
+}
+.upload_method_btn:hover {
+    background-color: bisque;
+}
+
+.cancel_add {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: fit-content;
+    position: absolute;
+    right: 0;
+    float: right;
+    cursor: pointer;
+    padding: 1em;
+}
+
+.submit {
+    display: flex;
+    width: fit-content;
+    margin: 3em auto;
+    background-color: bisque;
+    padding: 0.5em 2em;
+    border: none;
+    border-radius: 1em;
+    font-size: large;
+    cursor: pointer;
+}
