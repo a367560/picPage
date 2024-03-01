@@ -15,8 +15,7 @@ header{
     padding: 1em;
 }
 .header_img {
-    width: fit-content;
-    height: 2em;
+    width: 5%;
     display: inline-flex;
 }
 .intro {
@@ -102,6 +101,9 @@ footer {
 }
 
 @media only screen and (max-width: 430px) {
+    .header_img {
+        width: 20%;
+    }
     footer {
         position: relative;
     }
