@@ -133,8 +133,10 @@ function first_section_send(input){
         body: JSON.stringify(fetch_data),
     }).then(response => {
         console.log("success:", response);
+        alert("添加成功！");
     }).catch(err => {
         console.log("Error:" + err);
+        alert("添加失敗，請確認資料是否完整，並稍待片刻再嘗試！");
     });
 }
 
@@ -175,7 +177,9 @@ function second_section_send(){
         body: JSON.stringify(fetch_data),
     }).then(response => {
         console.log("success:", response);
+        alert("添加成功！");
     }).catch(err => {
         console.log("Error:" + err);
+        alert("添加失敗，請確認資料是否完整，並稍待片刻再嘗試！");
     });
 }
